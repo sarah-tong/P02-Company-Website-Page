@@ -9,15 +9,17 @@ body {
 
 }
 
+/*
 section:not([id]) {
-    margin: 1em 0;
-    padding: 0.5em 0;
-    border-top: 0.15em solid #333;
+margin: 1em 0;
+padding: 0.5em 0;
+border-top: 0.15em solid #333;
 }
+*/
 
 /*
 section[id]:first-of-type {
-    margin-top: 5rem;
+margin-top: 5rem;
 }
 */
 
@@ -359,7 +361,7 @@ COMBINED ELEMENTS -------------------
 
 
 /* homepage */
-#homepage-feature {
+.main-banner {
     display: flex;
     height: 40rem;
     background: lightgrey;
@@ -368,4 +370,22 @@ COMBINED ELEMENTS -------------------
 
 #gaming-products h1, #gaming-products p {
     text-align: center;
+}
+
+
+/* product page */
+.product-overview {
+    margin: 0 4rem;
+}
+
+.product-overview h1, .product-overview p {
+    text-align: center;
+}
+
+.product-overview p {
+    margin-bottom: 5rem;
+}
+
+.product-overview img {
+    width: 100%
 }
