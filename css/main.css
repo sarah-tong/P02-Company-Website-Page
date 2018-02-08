@@ -273,7 +273,8 @@ COMBINED ELEMENTS -------------------
     width: 100%;
 }
 
-.product-detail h3, .product-detail p {
+.product-detail h3,
+.product-detail p {
     flex: 1 0 auto;
     color: white;
     font-weight: 700;
@@ -361,24 +362,55 @@ COMBINED ELEMENTS -------------------
 
 
 /* homepage */
+
 .main-banner {
     display: flex;
-    height: 40rem;
+    height: auto;
     background: lightgrey;
     margin-bottom: 5rem;
 }
 
-#gaming-products h1, #gaming-products p {
+.hero-top-text {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-bottom-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#gaming-products h1,
+#gaming-products p {
+    text-align: center;
+}
+
+.home-hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+#product-categories h2 {
     text-align: center;
 }
 
 
 /* product page */
+
 .product-overview {
     margin: 0 4rem;
 }
 
-.product-overview h1, .product-overview p {
+.product-overview h1,
+.product-overview p {
     text-align: center;
 }
 
