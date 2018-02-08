@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Carbon.co</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/grids.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav id="main-nav">
+            <ul>
+                <li>
+                    <a href="index.html" class="button-nav">play</a>
+                </li>
+                <li>
+                    <a href="sitemap.html" class="button-nav">work</a>
+                </li>
+                <li>
+                    <a href="user_flows.html" class="button-nav">custom</a>
+                </li>
+                <li>
+                    <a href="#" class="button-nav">carbon.co</a>
+                </li>
+                <li>
+                    <a href="citations.html" class="button-nav">search</a>
+                </li>
+                <li>
+                    <a href="citations.html" class="button-nav">cart</a>
+                </li>
+                <li>
+                    <a href="citations.html" class="button-nav">about</a>
+                </li>
+                <li>
+                    <a href="citations.html" class="button-nav">chat</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="main-banner">
+            <h1>Product</h1>
+            <h2>Starting at $999</h2>
+        </section>
+
+        <section class="product-overview">
+            <h1>Product</h1>
+            <p>Blurbs about product one</p>
+
+            <div class="grid-wrapper">
+                <div class="col-1-of-2">
+                    <img src="img/placeholder.png" alt="picture of computer">
+                </div>
+                <div class="col-1-of-2">
+                    <button class="product-info-accordion">Specifications</button>
+                    <div class="product-info-panel">
+                        <p>Attribute # value</p>
+                        <p>Attribute # value</p>
+                        <p>Attribute # value</p>
+                        <p>Attribute # value</p>
+                        <p>Attribute # value</p>
+                    </div>
+
+                    <button class="product-info-accordion">Performance</button>
+                    <div class="product-info-panel">
+                        <p>Attribute # value</p>
+                        <p>Attribute # value</p>
+                        <p>Attribute # value</p>
+                        <p>Attribute # value</p>
+                        <p>Attribute # value</p>
+                    </div>
+
+                    <button class="product-info-accordion">Warranty</button>
+                    <div class="product-info-panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JavaScript for Product Information Accordian -->
+        <script>
+            var acc = document.getElementsByClassName("product-info-accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+    </body>
+
+</html>
