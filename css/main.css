@@ -388,10 +388,13 @@ COMBINED ELEMENTS -------------------
 /* homepage */
 
 .main-banner {
-    /*    display: flex;*/
-    height: auto;
+    position: relative;
+    display: block;
     background: lightgrey;
-    height: 31rem;
+}
+
+.homepage .main-banner {
+    background: none;
 }
 
 .hero-top-text {
@@ -399,15 +402,18 @@ COMBINED ELEMENTS -------------------
     bottom: 10%;
     right: 0;
     padding: 1rem;
+    margin:0;
     color: white;
+    text-align: right;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-bottom-text {
     position: absolute;
-    bottom: 0;
+    top: 74%;
     right: 0;
     padding: 1rem;
+    margin:0;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -418,7 +424,7 @@ COMBINED ELEMENTS -------------------
 }
 
 .home-hero-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -428,7 +434,6 @@ COMBINED ELEMENTS -------------------
 
 
 /* product page */
-
 
 .product-page .main-banner h1, .product-page .main-banner h2 {
     display: block;
@@ -525,5 +530,13 @@ COMBINED ELEMENTS -------------------
 
     .key-point-img {
         margin-top: 2rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .hero-top-text {
+        position: relative;
+        text-align: center;
+        background: none;
     }
 }
