@@ -105,6 +105,10 @@ nav li:nth-child(4) .button-nav:hover:before {
     border: none;
 }
 
+nav img {
+    width: 1.5rem;
+}
+
 /* Styling for Product Information Accordian */
 
 code span {
@@ -158,7 +162,7 @@ code span {
     position: relative;
 }
 
-.product-info-panel p span:last-child{
+.product-info-panel p span:last-child {
     position: absolute;
     left: 70%;
 }
@@ -384,28 +388,47 @@ COMBINED ELEMENTS -------------------
 /* homepage */
 
 .main-banner {
-    /*    display: flex;*/
+    display: block;
     height: auto;
+    position: relative;
+    display: block;
     background: lightgrey;
     height: 31rem;
 }
 
+.homepage .main-banner {
+    background: none;
+    height: auto;
+}
+
 .hero-top-text {
     position: absolute;
-    bottom: 10%;
+    bottom: 35%;
     right: 0;
     padding: 1rem;
+    margin: 0;
     color: white;
+    text-align: right;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-bottom-text {
     position: absolute;
-    bottom: 0;
+    bottom: 20%;
     right: 0;
     padding: 1rem;
+    margin: 0;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mobile-hero-text {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    margin-top: -0.25rem;
 }
 
 #gaming-products h1,
@@ -414,7 +437,7 @@ COMBINED ELEMENTS -------------------
 }
 
 .home-hero-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -425,8 +448,8 @@ COMBINED ELEMENTS -------------------
 
 /* product page */
 
-
-.product-page .main-banner h1, .product-page .main-banner h2 {
+.product-page .main-banner h1,
+.product-page .main-banner h2 {
     display: block;
     flex-wrap: wrap;
     width: fit-content;
@@ -443,7 +466,8 @@ COMBINED ELEMENTS -------------------
     margin: 5rem 4rem;
 }
 
-.product-page h1, .product-page h2,
+.product-page h1,
+.product-page h2,
 .product-page p {
     text-align: center;
 }
@@ -456,6 +480,42 @@ COMBINED ELEMENTS -------------------
     width: 100%;
     height: 33rem;
 }
+
+
+/*Grid Test*/
+
+#product-categories-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+}
+
+#product-categories-container img{
+    max-width: 50%;
+}
+
+.product-categories-featured{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.product-categories-featured img{
+    max-width: 100%;
+}
+
+.product-categories-secondary{
+    flex-direction: column;
+    background-color: aliceblue; 
+    text-align: center;
+}
+
+
+
 
 .smaller-product-views {
     display: flex;
@@ -514,7 +574,18 @@ COMBINED ELEMENTS -------------------
     height: 15rem;
 }
 
+@media (max-width: 1095px) {
+    .hero-bottom-text {
+        bottom: 14%;
+    }
+}
+
+
 @media (max-width: 767px) {
+    .hero-bottom-text {
+        bottom: 9%;
+    }
+    
     .ideal-for {
         margin-top: 5rem;
     }
@@ -522,4 +593,63 @@ COMBINED ELEMENTS -------------------
     .key-point-img {
         margin-top: 2rem;
     }
+}
+
+@media (max-width: 620px) {
+    .hero-bottom-text {
+        bottom: 4%;
+    }
+}
+
+@media (max-width: 520px) {
+    .hero-top-text, .hero-bottom-text {
+        display: none;
+    }
+    
+    .mobile-hero-text {
+        display: block;
+    }
+}
+
+
+/*chat page*/
+
+#chat-categories {
+    
+    
+}
+
+#chat-copy h1,
+#chat-categories p {
+    text-align: center;
+}
+
+#chat-copy p{
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#chat-categories h2 {
+    text-align: center;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat-container img {
+    max-width: 20%;
+    margin-top: 1rem;
+}
+
+#live-chat,
+#email,
+#schedule-call {
+    text-align: center;
+
 }
