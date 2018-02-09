@@ -391,15 +391,17 @@ COMBINED ELEMENTS -------------------
     position: relative;
     display: block;
     background: lightgrey;
+    height: 31rem;
 }
 
 .homepage .main-banner {
     background: none;
+    height: auto;
 }
 
 .hero-top-text {
     position: absolute;
-    bottom: 10%;
+    bottom: 35%;
     right: 0;
     padding: 1rem;
     margin:0;
@@ -410,12 +412,21 @@ COMBINED ELEMENTS -------------------
 
 .hero-bottom-text {
     position: absolute;
-    top: 74%;
+    bottom: 20%;
     right: 0;
     padding: 1rem;
     margin:0;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mobile-hero-text {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    margin-top: -0.25rem;
 }
 
 #gaming-products h1,
@@ -523,7 +534,18 @@ COMBINED ELEMENTS -------------------
     height: 15rem;
 }
 
+@media (max-width: 1095px) {
+    .hero-bottom-text {
+        bottom: 14%;
+    }
+}
+
+
 @media (max-width: 767px) {
+    .hero-bottom-text {
+        bottom: 9%;
+    }
+    
     .ideal-for {
         margin-top: 5rem;
     }
@@ -533,10 +555,18 @@ COMBINED ELEMENTS -------------------
     }
 }
 
+@media (max-width: 620px) {
+    .hero-bottom-text {
+        bottom: 4%;
+    }
+}
+
 @media (max-width: 520px) {
-    .hero-top-text {
-        position: relative;
-        text-align: center;
-        background: none;
+    .hero-top-text, .hero-bottom-text {
+        display: none;
+    }
+    
+    .mobile-hero-text {
+        display: block;
     }
 }
