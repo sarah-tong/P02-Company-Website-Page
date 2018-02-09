@@ -388,18 +388,22 @@ COMBINED ELEMENTS -------------------
 /* homepage */
 
 .main-banner {
+    display: block;
+    height: auto;
     position: relative;
     display: block;
     background: lightgrey;
+    height: 31rem;
 }
 
 .homepage .main-banner {
     background: none;
+    height: auto;
 }
 
 .hero-top-text {
     position: absolute;
-    bottom: 10%;
+    bottom: 35%;
     right: 0;
     padding: 1rem;
     margin: 0;
@@ -410,12 +414,21 @@ COMBINED ELEMENTS -------------------
 
 .hero-bottom-text {
     position: absolute;
-    top: 74%;
+    bottom: 20%;
     right: 0;
     padding: 1rem;
     margin: 0;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mobile-hero-text {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    margin-top: -0.25rem;
 }
 
 #gaming-products h1,
@@ -467,6 +480,42 @@ COMBINED ELEMENTS -------------------
     width: 100%;
     height: 33rem;
 }
+
+
+/*Grid Test*/
+
+#product-categories-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+}
+
+#product-categories-container img{
+    max-width: 50%;
+}
+
+.product-categories-featured{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.product-categories-featured img{
+    max-width: 100%;
+}
+
+.product-categories-secondary{
+    flex-direction: column;
+    background-color: aliceblue; 
+    text-align: center;
+}
+
+
+
 
 .smaller-product-views {
     display: flex;
@@ -525,7 +574,18 @@ COMBINED ELEMENTS -------------------
     height: 15rem;
 }
 
+@media (max-width: 1095px) {
+    .hero-bottom-text {
+        bottom: 14%;
+    }
+}
+
+
 @media (max-width: 767px) {
+    .hero-bottom-text {
+        bottom: 9%;
+    }
+    
     .ideal-for {
         margin-top: 5rem;
     }
@@ -535,11 +595,19 @@ COMBINED ELEMENTS -------------------
     }
 }
 
+@media (max-width: 620px) {
+    .hero-bottom-text {
+        bottom: 4%;
+    }
+}
+
 @media (max-width: 520px) {
-    .hero-top-text {
-        position: relative;
-        text-align: center;
-        background: none;
+    .hero-top-text, .hero-bottom-text {
+        display: none;
+    }
+    
+    .mobile-hero-text {
+        display: block;
     }
 }
 
