@@ -162,7 +162,7 @@ code span {
     position: relative;
 }
 
-.product-info-panel p span:last-child{
+.product-info-panel p span:last-child {
     position: absolute;
     left: 70%;
 }
@@ -402,7 +402,7 @@ COMBINED ELEMENTS -------------------
     bottom: 10%;
     right: 0;
     padding: 1rem;
-    margin:0;
+    margin: 0;
     color: white;
     text-align: right;
     background-color: rgba(0, 0, 0, 0.5);
@@ -413,7 +413,7 @@ COMBINED ELEMENTS -------------------
     top: 74%;
     right: 0;
     padding: 1rem;
-    margin:0;
+    margin: 0;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -435,7 +435,8 @@ COMBINED ELEMENTS -------------------
 
 /* product page */
 
-.product-page .main-banner h1, .product-page .main-banner h2 {
+.product-page .main-banner h1,
+.product-page .main-banner h2 {
     display: block;
     flex-wrap: wrap;
     width: fit-content;
@@ -452,7 +453,8 @@ COMBINED ELEMENTS -------------------
     margin: 5rem 4rem;
 }
 
-.product-page h1, .product-page h2,
+.product-page h1,
+.product-page h2,
 .product-page p {
     text-align: center;
 }
@@ -539,4 +541,47 @@ COMBINED ELEMENTS -------------------
         text-align: center;
         background: none;
     }
+}
+
+
+/*chat page*/
+
+#chat-categories {
+    
+    
+}
+
+#chat-copy h1,
+#chat-categories p {
+    text-align: center;
+}
+
+#chat-copy p{
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#chat-categories h2 {
+    text-align: center;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat-container img {
+    max-width: 20%;
+    margin-top: 1rem;
+}
+
+#live-chat,
+#email,
+#schedule-call {
+    text-align: center;
+
 }
