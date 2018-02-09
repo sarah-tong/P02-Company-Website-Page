@@ -388,6 +388,8 @@ COMBINED ELEMENTS -------------------
 /* homepage */
 
 .main-banner {
+    display: block;
+    height: auto;
     position: relative;
     display: block;
     background: lightgrey;
@@ -476,6 +478,42 @@ COMBINED ELEMENTS -------------------
     width: 100%;
     height: 33rem;
 }
+
+
+/*Grid Test*/
+
+#product-categories-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+}
+
+#product-categories-container img{
+    max-width: 50%;
+}
+
+.product-categories-featured{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.product-categories-featured img{
+    max-width: 100%;
+}
+
+.product-categories-secondary{
+    flex-direction: column;
+    background-color: aliceblue; 
+    text-align: center;
+}
+
+
+
 
 .smaller-product-views {
     display: flex;
